@@ -144,14 +144,15 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"gender\" : \"M\",\n  \"personType\" : \"F\",\n  \"country\" : \"Brasil\",\n  \"fullName\" : \"Dependent John Doo\",\n  \"nickname\" : \"dependent.john.doo\",\n  \"birthDate\" : \"1994-06-03\",\n  \"state\" : \"Minas Gerais\",\n  \"city\" : \"Uberlândia\",\n  \"civilState\" : \"Casado\",\n  \"occupation\" : \"Analista de Sistemas\",\n  \"motherName\" : \"Maria Aparecida Alves\",\n  \"fatherName\" : \"Carlos Aparecido Alves\",\n  \"numberOfChildren\" : 2,\n  \"income\" : {\n    \"currency\" : \"BRL\",\n    \"amount\" : \"23.87\"\n  },\n  \"documents\" : [ {\n    \"number\" : \"{{cpf}}\",\n    \"docType\" : \"CPF\"\n  } ],\n  \"addresses\" : [ {\n    \"street\" : \"Nicomedes\",\n    \"city\" : \"Uberlândia\",\n    \"country\" : \"Brasil\",\n    \"number\" : \"1234\",\n    \"zipCode\" : \"38411-106\",\n    \"district\" : \"Morada da Colina\",\n    \"state\" : \"MG\",\n    \"name\" : \"Residencial\",\n    \"complement\" : \"Condomínio Parque\",\n    \"customFields\" : {\n      \"street\" : {\n        \"code\" : \"1\",\n        \"type\" : \"avenida\"\n      },\n      \"yourCustomField\" : {\n        \"someField\" : \"someValue\"\n      }\n    }\n  } ],\n  \"contacts\" : [ {\n    \"contactType\" : \"email\",\n    \"content\" : {\n      \"name\" : \"Principal\",\n      \"email\" : \"dependent.john.doo@gmail.com\"\n    }\n  }, {\n    \"contactType\" : \"PHONE\",\n    \"content\" : {\n      \"name\" : \"Celular\",\n      \"countryCode\" : \"55\",\n      \"areaCode\" : \"34\",\n      \"lineNumber\" : \"99999-9999\"\n    }\n  } ],\n  \"zns\" : {\n    \"userId\" : \"34981667761\",\n    \"deviceId\" : \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\" : \"ANDROID\",\n    \"token\" : \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\" : {\n    \"someField\" : \"someValue\"\n  }\n}"
+							"raw": "{\n  \"gender\" : \"M\",\n  \"personType\" : \"F\",\n  \"country\" : \"Italia\",\n  \"fullName\" : \"Dependent John Doo\",\n  \"nickname\" : \"dependent.john.doo\",\n  \"birthDate\" : \"1994-06-03\",\n  \"state\" : \"Minas Gerais\",\n  \"city\" : \"Uberlândia\",\n  \"civilState\" : \"Casado\",\n  \"occupation\" : \"Analista de Sistemas\",\n  \"motherName\" : \"Maria Aparecida Alves\",\n  \"fatherName\" : \"Carlos Aparecido Alves\",\n  \"numberOfChildren\" : 2,\n  \"income\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : \"23.87\"\n  },\n  \"documents\" : [ {\n    \"number\" : \"{{cpf}}\",\n    \"docType\" : \"CPF\"\n  } ],\n  \"addresses\" : [ {\n    \"street\" : \"Nicomedes\",\n    \"city\" : \"Uberlândia\",\n    \"country\" : \"Brasil\",\n    \"number\" : \"1234\",\n    \"zipCode\" : \"38411-106\",\n    \"district\" : \"Morada da Colina\",\n    \"state\" : \"MG\",\n    \"name\" : \"Residencial\",\n    \"complement\" : \"Condomínio Parque\",\n    \"customFields\" : {\n      \"street\" : {\n        \"code\" : \"1\",\n        \"type\" : \"avenida\"\n      },\n      \"yourCustomField\" : {\n        \"someField\" : \"someValue\"\n      }\n    }\n  } ],\n  \"contacts\" : [ {\n    \"contactType\" : \"email\",\n    \"content\" : {\n      \"name\" : \"Principal\",\n      \"email\" : \"dependent.john.doo@gmail.com\"\n    }\n  }, {\n    \"contactType\" : \"PHONE\",\n    \"content\" : {\n      \"name\" : \"Celular\",\n      \"countryCode\" : \"55\",\n      \"areaCode\" : \"34\",\n      \"lineNumber\" : \"99999-9999\"\n    }\n  } ],\n  \"zns\" : {\n    \"userId\" : \"34981667761\",\n    \"deviceId\" : \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\" : \"ANDROID\",\n    \"token\" : \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\" : {\n    \"someField\" : \"someValue\"\n  }\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/customers",
+							"raw": "{{gatewayUrl}}/customer/v1/customers",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"customers"
 							]
@@ -223,11 +224,12 @@
 							"raw": "{\n  \"gender\": \"M\",\n  \"personType\": \"F\",\n  \"country\": \"Brasil\",\n  \"fullName\": \"John Doo\",\n  \"nickname\": \"john.doo\",\n  \"birthDate\": \"1994-06-03\",\n  \"state\": \"Minas Gerais\",\n  \"city\": \"Uberlândia\",\n  \"civilState\": \"Casado\",\n  \"occupation\": \"Analista de Sistemas\",\n  \"motherName\": \"Maria Aparecida Alves\",\n  \"fatherName\": \"Carlos Aparecido Alves\",\n  \"numberOfChildren\": 2,\n  \"prefix\":\"prefix\",\n  \"firstName\":\"Primeiro nome\",\n  \"lastName\": \"Ultimo nome\",\n  \"income\": {\n    \"currency\": \"BRL\",\n    \"amount\": \"23.87\"\n  },\n  \"documents\": [\n    {\n      \"number\": \"{{cpf}}\",\n      \"docType\": \"CPF\"\n    }\n  ],\n  \"addresses\": [\n    {\n      \"description\":\"Endereço residencial\",\n      \"addressType\":\"Endereço principal\",\n      \"address\": \"Nicomedes\",\n      \"city\": \"Uberlândia\",\n      \"country\": \"Brasil\",\n      \"number\": \"1234\",\n      \"zipCode\": \"38411-106\",\n      \"postalCode\":\"38411-106\",\n      \"district\": \"Morada da Colina\",\n      \"state\": \"MG\",\n      \"name\": \"Residencial\",\n      \"complement\": \"Condomínio Parque\",\n      \"customFields\": {\n        \"street\": {\n          \"code\": \"1\",\n          \"type\": \"avenida\"\n        },\n        \"yourCustomField\": {\n          \"someField\": \"someValue\"\n        }\n      }\n    }\n  ],\n  \"contacts\": [\n    {\n      \"contactType\": \"email\",\n      \"content\": {\n        \"name\": \"Principal\",\n        \"email\": \"john.doo@gmail.com\"\n      }\n    },\n    {\n      \"contactType\": \"PHONE\",\n      \"content\": {\n        \"name\": \"Celular\",\n        \"countryCode\": \"55\",\n        \"areaCode\": \"34\",\n        \"lineNumber\": \"99999-9999\"\n      }\n    }\n  ],\n  \"zns\": {\n    \"userId\": \"34981667716\",\n    \"deviceId\": \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\": \"ANDROID\",\n    \"token\": \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\": {\n    \"someField\": \"someValue\"\n  },\n  \"segments\": [\n    {\n      \"name\":\"segment1\",\n      \"description\":\"segmentDescription\",\n      \"parentId\":2\n    }\n  ],\n  \"socialMedias\":[\n    {\n      \"media\":\"Facebook\",\n      \"value\":\"https:facebook.com/customer1\"\n    }\n  ],\n  \"jobDepartmentId\": 1,\n  \"jobRoleId\": 1,\n  \"jobTitleId\": 1\n}\n"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v2/customers",
+							"raw": "{{gatewayUrl}}/customer/v2/customers",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v2",
 								"customers"
 							]
@@ -299,11 +301,12 @@
 							"raw": "{}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v2/customers",
+							"raw": "{{gatewayUrl}}/customer/v2/customers",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v2",
 								"customers"
 							]
@@ -361,9 +364,9 @@
 							"raw": "{\n  \"gender\": \"M\",\n  \"personType\": \"F\",\n  \"country\": \"Brasil\",\n  \"fullName\": \"Dependent John Doo\",\n  \"nickname\": \"dependent.john.doo\",\n  \"birthDate\": \"1994-06-03\",\n  \"state\": \"Minas Gerais\",\n  \"city\": \"Uberlândia\",\n  \"civilState\": \"Casado\",\n  \"occupation\": \"Analista de Sistemas\",\n  \"motherName\": \"Maria Aparecida Alves\",\n  \"fatherName\": \"Carlos Aparecido Alves\",\n  \"numberOfChildren\": 2,\n  \"income\": {\n    \"currency\": \"BRL\",\n    \"amount\": \"23.87\"\n  },\n  \"documents\": [\n    {\n      \"number\": \"67634088625\",\n      \"docType\": \"CPF\"\n    }\n  ],\n  \"addresses\": [\n    {\n      \"street\": \"Nicomedes\",\n      \"city\": \"Uberlândia\",\n      \"country\": \"Brasil\",\n      \"number\": \"1234\",\n      \"zipCode\": \"38411-106\",\n      \"district\": \"Morada da Colina\",\n      \"state\": \"MG\",\n      \"name\": \"Residencial\",\n      \"complement\": \"Condomínio Parque\",\n      \"customFields\": {\n        \"street\": {\n          \"code\": \"1\",\n          \"type\": \"avenida\"\n        },\n        \"yourCustomField\": {\n          \"someField\": \"someValue\"\n        }\n      }\n    }\n  ],\n  \"contacts\": [\n    {\n      \"contactType\": \"email\",\n      \"content\": {\n        \"name\": \"Principal\",\n        \"email\": \"dependent.john.doo@gmail.com\"\n      }\n    },\n    {\n      \"contactType\": \"PHONE\",\n      \"content\": {\n        \"name\": \"Celular\",\n        \"countryCode\": \"55\",\n        \"areaCode\": \"34\",\n        \"lineNumber\": \"99999-9999\"\n      }\n    }\n  ],\n  \"zns\": {\n    \"userId\": \"34981667761\",\n    \"deviceId\": \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\": \"ANDROID\",\n    \"token\": \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\": {\n    \"someField\": \"someValue\"\n  }\n}\n"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/customers/{{customerId}}/dependents",
+							"raw": "{{gatewayUrl}}/v1/customers/{{customerId}}/dependents",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
 								"v1",
@@ -425,11 +428,12 @@
 							"raw": "{\n  \"gender\": \"M\",\n  \"personType\": \"F\",\n  \"country\": \"Brasil\",\n  \"fullName\": \"John Doo 2\",\n  \"nickname\": \"john.doo2\",\n  \"birthDate\": \"1994-06-03\",\n  \"state\": \"SP\",\n  \"city\": \"São Paulo\",\n  \"civilState\": \"Casado\",\n  \"occupation\": \"Analista de Sistemas\",\n  \"motherName\": \"Maria Aparecida Alves\",\n  \"fatherName\": \"Carlos Aparecido Alves\",\n  \"numberOfChildren\": 3,\n  \"income\": {\n    \"currency\": \"BRL\",\n    \"amount\": \"23.87\"\n  },\n  \"zns\": {\n    \"userId\": \"34981667716\",\n    \"deviceId\": \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\": \"ANDROID\",\n    \"token\": \"32b34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\": {\n    \"promotion\": \"PROMO-2345\"\n  }\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/customers/{{customerId}}",
+							"raw": "{{gatewayUrl}}/customer/v1/customers/{{customerId}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"customers",
 								"{{customerId}}"
@@ -488,11 +492,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/customers/{{customerId}}",
+							"raw": "{{gatewayUrl}}/customer/v1/customers/{{customerId}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"customers",
 								"{{customerId}}"
@@ -551,11 +556,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/customers/{{customerId}}?document={{cpf}}",
+							"raw": "{{gatewayUrl}}/customer/v1/customers/{{customerId}}?document={{cpf}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"customers",
 								"{{customerId}}"
@@ -620,11 +626,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/customers/{{customerId}}/dependents",
+							"raw": "{{gatewayUrl}}/customer/v1/customers/{{customerId}}/dependents",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"customers",
 								"{{customerId}}",
@@ -684,11 +691,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/customers/{{customerId}}",
+							"raw": "{{gatewayUrl}}/customer/v1/customers/{{customerId}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"customers",
 								"{{customerId}}"
@@ -753,11 +761,12 @@
 							"raw": "{\n  \"gender\": \"CUSTOM_GENDER\"\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v2/genders",
+							"raw": "{{gatewayUrl}}/customer/v2/genders",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v2",
 								"genders"
 							]
@@ -815,11 +824,12 @@
 							"raw": "{\n  \"gender\" : \"M\",\n  \"personType\" : \"F\",\n  \"country\" : \"Brasil\",\n  \"fullName\" : \"Dependent John Doo\",\n  \"nickname\" : \"dependent.john.doo\",\n  \"birthDate\" : \"1994-06-03\",\n  \"state\" : \"Minas Gerais\",\n  \"city\" : \"Uberlândia\",\n  \"civilState\" : \"Casado\",\n  \"occupation\" : \"Analista de Sistemas\",\n  \"motherName\" : \"Maria Aparecida Alves\",\n  \"fatherName\" : \"Carlos Aparecido Alves\",\n  \"numberOfChildren\" : 2,\n  \"income\" : {\n    \"currency\" : \"BRL\",\n    \"amount\" : \"23.87\"\n  },\n  \"documents\" : [ {\n    \"number\" : \"{{cpf}}\",\n    \"docType\" : \"CPF\"\n  } ],\n  \"addresses\" : [ {\n    \"street\" : \"Nicomedes\",\n    \"city\" : \"Uberlândia\",\n    \"country\" : \"Brasil\",\n    \"number\" : \"1234\",\n    \"zipCode\" : \"38411-106\",\n    \"district\" : \"Morada da Colina\",\n    \"state\" : \"MG\",\n    \"name\" : \"Residencial\",\n    \"complement\" : \"Condomínio Parque\",\n    \"customFields\" : {\n      \"street\" : {\n        \"code\" : \"1\",\n        \"type\" : \"avenida\"\n      },\n      \"yourCustomField\" : {\n        \"someField\" : \"someValue\"\n      }\n    }\n  } ],\n  \"contacts\" : [ {\n    \"contactType\" : \"email\",\n    \"content\" : {\n      \"name\" : \"Principal\",\n      \"email\" : \"dependent.john.doo@gmail.com\"\n    }\n  }, {\n    \"contactType\" : \"PHONE\",\n    \"content\" : {\n      \"name\" : \"Celular\",\n      \"countryCode\" : \"55\",\n      \"areaCode\" : \"34\",\n      \"lineNumber\" : \"99999-9999\"\n    }\n  } ],\n  \"zns\" : {\n    \"userId\" : \"34981667761\",\n    \"deviceId\" : \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\" : \"ANDROID\",\n    \"token\" : \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\" : {\n    \"someField\" : \"someValue\"\n  }\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v2/genders/{{genderName}}",
+							"raw": "{{gatewayUrl}}/customer/v2/genders/{{genderName}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v2",
 								"genders",
 								"{{genderName}}"
@@ -878,11 +888,12 @@
 							"raw": "{\n  \"gender\" : \"M\",\n  \"personType\" : \"F\",\n  \"country\" : \"Brasil\",\n  \"fullName\" : \"Dependent John Doo\",\n  \"nickname\" : \"dependent.john.doo\",\n  \"birthDate\" : \"1994-06-03\",\n  \"state\" : \"Minas Gerais\",\n  \"city\" : \"Uberlândia\",\n  \"civilState\" : \"Casado\",\n  \"occupation\" : \"Analista de Sistemas\",\n  \"motherName\" : \"Maria Aparecida Alves\",\n  \"fatherName\" : \"Carlos Aparecido Alves\",\n  \"numberOfChildren\" : 2,\n  \"income\" : {\n    \"currency\" : \"BRL\",\n    \"amount\" : \"23.87\"\n  },\n  \"documents\" : [ {\n    \"number\" : \"{{cpf}}\",\n    \"docType\" : \"CPF\"\n  } ],\n  \"addresses\" : [ {\n    \"street\" : \"Nicomedes\",\n    \"city\" : \"Uberlândia\",\n    \"country\" : \"Brasil\",\n    \"number\" : \"1234\",\n    \"zipCode\" : \"38411-106\",\n    \"district\" : \"Morada da Colina\",\n    \"state\" : \"MG\",\n    \"name\" : \"Residencial\",\n    \"complement\" : \"Condomínio Parque\",\n    \"customFields\" : {\n      \"street\" : {\n        \"code\" : \"1\",\n        \"type\" : \"avenida\"\n      },\n      \"yourCustomField\" : {\n        \"someField\" : \"someValue\"\n      }\n    }\n  } ],\n  \"contacts\" : [ {\n    \"contactType\" : \"email\",\n    \"content\" : {\n      \"name\" : \"Principal\",\n      \"email\" : \"dependent.john.doo@gmail.com\"\n    }\n  }, {\n    \"contactType\" : \"PHONE\",\n    \"content\" : {\n      \"name\" : \"Celular\",\n      \"countryCode\" : \"55\",\n      \"areaCode\" : \"34\",\n      \"lineNumber\" : \"99999-9999\"\n    }\n  } ],\n  \"zns\" : {\n    \"userId\" : \"34981667761\",\n    \"deviceId\" : \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\" : \"ANDROID\",\n    \"token\" : \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\" : {\n    \"someField\" : \"someValue\"\n  }\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v2/genders/{{genderName}}",
+							"raw": "{{gatewayUrl}}/customer/v2/genders/{{genderName}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v2",
 								"genders",
 								"{{genderName}}"
@@ -941,11 +952,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v2/genders",
+							"raw": "{{gatewayUrl}}/customer/v2/genders",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v2",
 								"genders"
 							]
@@ -1009,11 +1021,12 @@
 							"raw": "{\n  \"name\": \"CUSTOM_TYPE3\",\n  \"format\": \"\\\\d{10}\"\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/document-types",
+							"raw": "{{gatewayUrl}}/customer/v1/document-types",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"document-types"
 							]
@@ -1071,11 +1084,12 @@
 							"raw": "{\n  \"format\": \"\\\\d{25}\"\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/document-types/{{documentTypeName}}",
+							"raw": "{{gatewayUrl}}/customer/v1/document-types/{{documentTypeName}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"document-types",
 								"{{documentTypeName}}"
@@ -1134,11 +1148,12 @@
 							"raw": "{\n  \"gender\" : \"M\",\n  \"personType\" : \"F\",\n  \"country\" : \"Brasil\",\n  \"fullName\" : \"Dependent John Doo\",\n  \"nickname\" : \"dependent.john.doo\",\n  \"birthDate\" : \"1994-06-03\",\n  \"state\" : \"Minas Gerais\",\n  \"city\" : \"Uberlândia\",\n  \"civilState\" : \"Casado\",\n  \"occupation\" : \"Analista de Sistemas\",\n  \"motherName\" : \"Maria Aparecida Alves\",\n  \"fatherName\" : \"Carlos Aparecido Alves\",\n  \"numberOfChildren\" : 2,\n  \"income\" : {\n    \"currency\" : \"BRL\",\n    \"amount\" : \"23.87\"\n  },\n  \"documents\" : [ {\n    \"number\" : \"{{cpf}}\",\n    \"docType\" : \"CPF\"\n  } ],\n  \"addresses\" : [ {\n    \"street\" : \"Nicomedes\",\n    \"city\" : \"Uberlândia\",\n    \"country\" : \"Brasil\",\n    \"number\" : \"1234\",\n    \"zipCode\" : \"38411-106\",\n    \"district\" : \"Morada da Colina\",\n    \"state\" : \"MG\",\n    \"name\" : \"Residencial\",\n    \"complement\" : \"Condomínio Parque\",\n    \"customFields\" : {\n      \"street\" : {\n        \"code\" : \"1\",\n        \"type\" : \"avenida\"\n      },\n      \"yourCustomField\" : {\n        \"someField\" : \"someValue\"\n      }\n    }\n  } ],\n  \"contacts\" : [ {\n    \"contactType\" : \"email\",\n    \"content\" : {\n      \"name\" : \"Principal\",\n      \"email\" : \"dependent.john.doo@gmail.com\"\n    }\n  }, {\n    \"contactType\" : \"PHONE\",\n    \"content\" : {\n      \"name\" : \"Celular\",\n      \"countryCode\" : \"55\",\n      \"areaCode\" : \"34\",\n      \"lineNumber\" : \"99999-9999\"\n    }\n  } ],\n  \"zns\" : {\n    \"userId\" : \"34981667761\",\n    \"deviceId\" : \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\" : \"ANDROID\",\n    \"token\" : \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\" : {\n    \"someField\" : \"someValue\"\n  }\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/document-types/{{documentTypeName}}",
+							"raw": "{{gatewayUrl}}/customer/v1/document-types/{{documentTypeName}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"document-types",
 								"{{documentTypeName}}"
@@ -1197,11 +1212,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/document-types",
+							"raw": "{{gatewayUrl}}/customer/v1/document-types",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"document-types"
 							]
@@ -1259,11 +1275,12 @@
 							"raw": "{\n  \"gender\" : \"M\",\n  \"personType\" : \"F\",\n  \"country\" : \"Brasil\",\n  \"fullName\" : \"Dependent John Doo\",\n  \"nickname\" : \"dependent.john.doo\",\n  \"birthDate\" : \"1994-06-03\",\n  \"state\" : \"Minas Gerais\",\n  \"city\" : \"Uberlândia\",\n  \"civilState\" : \"Casado\",\n  \"occupation\" : \"Analista de Sistemas\",\n  \"motherName\" : \"Maria Aparecida Alves\",\n  \"fatherName\" : \"Carlos Aparecido Alves\",\n  \"numberOfChildren\" : 2,\n  \"income\" : {\n    \"currency\" : \"BRL\",\n    \"amount\" : \"23.87\"\n  },\n  \"documents\" : [ {\n    \"number\" : \"{{cpf}}\",\n    \"docType\" : \"CPF\"\n  } ],\n  \"addresses\" : [ {\n    \"street\" : \"Nicomedes\",\n    \"city\" : \"Uberlândia\",\n    \"country\" : \"Brasil\",\n    \"number\" : \"1234\",\n    \"zipCode\" : \"38411-106\",\n    \"district\" : \"Morada da Colina\",\n    \"state\" : \"MG\",\n    \"name\" : \"Residencial\",\n    \"complement\" : \"Condomínio Parque\",\n    \"customFields\" : {\n      \"street\" : {\n        \"code\" : \"1\",\n        \"type\" : \"avenida\"\n      },\n      \"yourCustomField\" : {\n        \"someField\" : \"someValue\"\n      }\n    }\n  } ],\n  \"contacts\" : [ {\n    \"contactType\" : \"email\",\n    \"content\" : {\n      \"name\" : \"Principal\",\n      \"email\" : \"dependent.john.doo@gmail.com\"\n    }\n  }, {\n    \"contactType\" : \"PHONE\",\n    \"content\" : {\n      \"name\" : \"Celular\",\n      \"countryCode\" : \"55\",\n      \"areaCode\" : \"34\",\n      \"lineNumber\" : \"99999-9999\"\n    }\n  } ],\n  \"zns\" : {\n    \"userId\" : \"34981667761\",\n    \"deviceId\" : \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\" : \"ANDROID\",\n    \"token\" : \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\" : {\n    \"someField\" : \"someValue\"\n  }\n}"
 						},
 						"url": {
-							"raw": "{{urlCIM}}/v1/document-types/{{documentTypeName}}",
+							"raw": "{{gatewayUrl}}/customer/v1/document-types/{{documentTypeName}}",
 							"host": [
-								"{{urlCIM}}"
+								"{{gatewayUrl}}"
 							],
 							"path": [
+								"customer",
 								"v1",
 								"document-types",
 								"{{documentTypeName}}"
