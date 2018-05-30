@@ -144,7 +144,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"gender\" : \"M\",\n  \"personType\" : \"F\",\n  \"country\" : \"Italia\",\n  \"fullName\" : \"Dependent John Doo\",\n  \"nickname\" : \"dependent.john.doo\",\n  \"birthDate\" : \"1994-06-03\",\n  \"state\" : \"Minas Gerais\",\n  \"city\" : \"Uberlândia\",\n  \"civilState\" : \"Casado\",\n  \"occupation\" : \"Analista de Sistemas\",\n  \"motherName\" : \"Maria Aparecida Alves\",\n  \"fatherName\" : \"Carlos Aparecido Alves\",\n  \"numberOfChildren\" : 2,\n  \"income\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : \"23.87\"\n  },\n  \"documents\" : [ {\n    \"number\" : \"{{cpf}}\",\n    \"docType\" : \"CPF\"\n  } ],\n  \"addresses\" : [ {\n    \"street\" : \"Nicomedes\",\n    \"city\" : \"Uberlândia\",\n    \"country\" : \"Brasil\",\n    \"number\" : \"1234\",\n    \"zipCode\" : \"38411-106\",\n    \"district\" : \"Morada da Colina\",\n    \"state\" : \"MG\",\n    \"name\" : \"Residencial\",\n    \"complement\" : \"Condomínio Parque\",\n    \"customFields\" : {\n      \"street\" : {\n        \"code\" : \"1\",\n        \"type\" : \"avenida\"\n      },\n      \"yourCustomField\" : {\n        \"someField\" : \"someValue\"\n      }\n    }\n  } ],\n  \"contacts\" : [ {\n    \"contactType\" : \"email\",\n    \"content\" : {\n      \"name\" : \"Principal\",\n      \"email\" : \"dependent.john.doo@gmail.com\"\n    }\n  }, {\n    \"contactType\" : \"PHONE\",\n    \"content\" : {\n      \"name\" : \"Celular\",\n      \"countryCode\" : \"55\",\n      \"areaCode\" : \"34\",\n      \"lineNumber\" : \"99999-9999\"\n    }\n  } ],\n  \"zns\" : {\n    \"userId\" : \"34981667761\",\n    \"deviceId\" : \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\" : \"ANDROID\",\n    \"token\" : \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\" : {\n    \"someField\" : \"someValue\"\n  }\n}"
+							"raw": "{\n  \"gender\" : \"MASCULINO\",\n  \"personType\" : \"F\",\n  \"country\" : \"Italia\",\n  \"fullName\" : \"Luca Rossi\",\n  \"nickname\" : \"luca.rossi\",\n  \"birthDate\" : \"1994-06-03\",\n  \"state\" : \"Roma\",\n  \"city\" : \"Roma\",\n  \"civilState\" : \"Sposato\",\n  \"occupation\" : \"Analista di sistemi\",\n  \"motherName\" : \"Giovanna Rossi\",\n  \"fatherName\" : \"Lorenzo Rossi\",\n  \"numberOfChildren\" : 2,\n  \"income\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : \"23.87\"\n  },\n  \"documents\" : [ {\n    \"number\" : \"{{cie}}\",\n    \"docType\" : \"CIE\"\n  } ],\n  \"addresses\" : [ {\n    \"street\" : \"Via del Quirinale\",\n    \"city\" : \"Roma\",\n    \"country\" : \"Italia\",\n    \"number\" : \"1234\",\n    \"zipCode\" : \"38411-106\",\n    \"district\" : \"Roma\",\n    \"state\" : \"RM\",\n    \"name\" : \"Via del Quirinale\",\n    \"complement\" : \"Quirinale\",\n    \"customFields\" : {\n      \"street\" : {\n        \"code\" : \"1\",\n        \"type\" : \"via\"\n      },\n      \"yourCustomField\" : {\n        \"someField\" : \"someValue\"\n      }\n    }\n  } ],\n  \"contacts\" : [ {\n    \"contactType\" : \"email\",\n    \"content\" : {\n      \"name\" : \"Principale\",\n      \"email\" : \"luca.rossi898@gmail.com\"\n    }\n  }, {\n    \"contactType\" : \"PHONE\",\n    \"content\" : {\n      \"name\" : \"Mobile\",\n      \"countryCode\" : \"55\",\n      \"areaCode\" : \"34\",\n      \"lineNumber\" : \"99999-9999\"\n    }\n  } ],\n  \"zns\" : {\n    \"userId\" : \"34981667761\",\n    \"deviceId\" : \"da39a3ee5e6b4b0d3255bfef95601890afd80709\",\n    \"platform\" : \"ANDROID\",\n    \"token\" : \"10a34637ad661d98ba3344717656fcc76209c2f8\"\n  },\n  \"customFields\" : {\n    \"someField\" : \"someValue\"\n  }\n}"
 						},
 						"url": {
 							"raw": "{{gatewayUrl}}/customer/v1/customers",
@@ -758,7 +758,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"gender\": \"CUSTOM_GENDER\"\n}"
+							"raw": "{\n  \"gender\": \"FEMENINO\"\n}"
 						},
 						"url": {
 							"raw": "{{gatewayUrl}}/customer/v2/genders",
@@ -1018,7 +1018,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"CUSTOM_TYPE3\",\n  \"format\": \"\\\\d{10}\"\n}"
+							"raw": "{\n  \"name\": \"CIE\",\n  \"format\": \"\\\\d{10}\"\n}"
 						},
 						"url": {
 							"raw": "{{gatewayUrl}}/customer/v1/document-types",
